@@ -76,4 +76,6 @@ package.json
 ```
 
 访问 <http://127.0.0.1:3000/test/learn/home> 查看counter效果
+
+使用 `npm run start:client` 命令可以启动不带服务端渲染的开发模式
     
