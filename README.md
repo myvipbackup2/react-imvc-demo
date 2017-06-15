@@ -1,10 +1,10 @@
 # react-imvc-demo
 
-学习一下同构的思想，使用React-imvc，不用React全家桶
+最近学习一下同构的思想，使用React-imvc，不用React全家桶
 
 ***
 
-react-imvc
+react-imvc-template 
 --------------
 
 <https://github.com/Lucifier129/react-imvc-template>
@@ -24,3 +24,33 @@ react-imvc
 * whatwg-fetch/node-fetch
 * pm2
 * and more
+
+***
+
+### 目录结构
+
+```
+├── bin                 // Node启动文件
+├── build               // 构建服务和webpack配置
+├── scripts             // 启动、关闭脚本
+├── server              // 服务端渲染文件
+├── src                 // 源代码目录
+│   ├── app-demo   	    // demo目录
+│   │   ├── components  // 项目共享组件
+│   │   ├── share       // 项目共享方法
+│   │   ├── home        // 具体页面
+│   │   │   ├── controller.js  
+│   │   │   ├── model.js       
+│   │   │   └── view.js        
+│   │   └── *           // 其他页面
+│   ├── app-*           // 其他项目
+│   ├── components      // 共享组件
+│   ├── share           // 共享方法
+│   ├── index.js        // js入口
+│   └── routes.js       // 路由
+├── static              // 项目build生成文件，存放css等静态文件
+├── package.json        // 项目配置文件
+└── README.md           // 项目介绍
+```
+
+***
