@@ -6,6 +6,7 @@ export default function View ({ state, handlers }) {
   return (
     <div>
       <Style name='test' />
+      <Style name='index' />
       <Menu />
       <div>
         <h1>count: {state.count}</h1>

@@ -2,6 +2,12 @@
 
 最近学习一下同构的思想，使用React-imvc，不用React全家桶
 
+imvc 全称 isomorphic-mvc 即同构mvc  
+
+一份代码其可以跑在客户端又可以跑在服务端
+
+*用户在交互过程中发生的页面跳转，则走客户端渲染模式，可以极大的降低服务器的负荷，同时又保留了首次访问的速度*
+
 ***
 
 react-imvc-template
@@ -77,5 +83,19 @@ package.json
 
 访问 <http://127.0.0.1:3000/test/learn/home> 查看counter效果
 
-使用 `npm run start:client` 命令可以启动不带服务端渲染的开发模式
+使用 `npm run start:client` 命令可以启动不带服务端渲染的开发模式,容易debug，查看源码可以发现服务端只渲染了一个基本的骨架
+
+使用以下命令预加载css文件   
+
+在View.js中
+```javascript
+import {Style} from 'react-imvc/component'
+<Style name='test' />   
+```
+在controller.js中
+```javascript
+preload = {
+    test: '/app-learn/css/test.css'
+  };
+```
     

@@ -7,7 +7,8 @@ const { initialState, ...actions } = model
 
 export default class Test extends Controller {
   preload = {
-    test: '/app-template/css/test.css'
+    test: '/app-template/css/test.css',
+    index: '/app-template/css/test.css'
   };
   View = View; // React 根组件
   initialState = initialState; // 初始化状态

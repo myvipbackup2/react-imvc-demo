@@ -8,5 +8,9 @@ export default [
   {
     path: '/learn/home',
     controller: require('./home/controller')
+  },
+  {
+    path: '/learn',
+    controller: require('./login/controller')
   }
 ]

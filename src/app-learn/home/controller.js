@@ -9,6 +9,10 @@ import View from './view'
 const { initialState, ...actions } = Model
 
 export default class Home extends Controller {
+  preload = {
+    test: '/app-learn/css/test.css'
+  };
+
   View = View;
   initialState = initialState;
   actions = actions;
@@ -24,4 +28,10 @@ export default class Home extends Controller {
     let { DECREMENT } = store.actions
     DECREMENT()
   };
+
+  // 在View组件插入到dom树时触发
+  componentDidMount () {
+    console.log('didMount')
+    this.handleIncrement()
+  }
 }
