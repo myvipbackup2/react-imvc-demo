@@ -4,7 +4,7 @@
 
 ***
 
-react-imvc-template 
+react-imvc-template
 --------------
 
 <https://github.com/Lucifier129/react-imvc-template>
@@ -54,3 +54,17 @@ react-imvc-template
 ```
 
 ***
+
+#### 比如 app-learn 下面创建一个新的页  
+
+> View 是 React 写的， Model 是 redux-like 的简化版库 relite， Controller 是一个带生命周期的 ES2015 Classes类。
+
+> Model 包含2个概念 :  
+    1. initialState 是页面的状态树，包含所有数据  
+    2. actions 接受2个参数(state,payload) state是最初的 initialState 然后变成 actions 返回的 new state
+  
+##### View , Model 都将被挂载到Controller里 ，Model 的 2个组成部分将被用来创建 controller.store
+
+react-imvc 会自动把 View 和 state 绑定起来，如果state改变将会自动刷新View
+    
+    
