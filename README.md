@@ -67,4 +67,13 @@ react-imvc-template
 
 react-imvc 会自动把 View 和 state 绑定起来，如果state改变将会自动刷新View
     
+`npm start` 启动项目  
+
+发布路径在
+ ```
+package.json 
+   里的 config 的 vd 字段 
+```
+
+访问 <http://127.0.0.1:3000/test/learn/home> 查看counter效果
     

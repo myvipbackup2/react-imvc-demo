@@ -3,7 +3,7 @@
  */
 
 import Controller from 'react-imvc/controller'
-import Model from './model'
+import * as Model from './model'
 import View from './view'
 
 const { initialState, ...actions } = Model
